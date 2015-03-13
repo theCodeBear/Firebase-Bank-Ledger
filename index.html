@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Firebase Bank System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel='stylesheet' href='styles.css'>
+  </head>
+  <body>
+    <div class='container-fluid'>
+      <h1> Firebase Bank Ledger </h1>
+
+      <h2> Balance </h2>
+      <div id='balance'></div>
+
+      <div class='row'>
+        <div class='col-md-4 col-md-offset-4'>
+          <div id='form'>
+            <input type='text' id='input' placeholder='$'>
+            <button id='deposit' class='btn btn-primary'>Desposit</button>
+            <button id='withdrawal' class='btn btn-primary'>Withdrawal</button>
+          </div>
+        </div>
+      </div>
+
+      <div id='ledger'>
+        <div class='row'>
+          <div id='deposits' class='col-md-6'>
+            <h2> Desposits </h2>
+            <ul id='depositList'></ul>
+          </div>
+          <div id='withdrawals' class='col-md-6'>
+            <h2> Withdrawals </h2>
+            <ul id='withdrawalList'></ul>
+          </div>
+        </div>
+        <div class='row'>
+          <div id='fees' class='col-md-12'>
+            <h2> Fees </h2>
+            <ul id='feeList'></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.firebase.com/js/client/2.2.2/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src='main.js'></script>
+  </body>
+</html>

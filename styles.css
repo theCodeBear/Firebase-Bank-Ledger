@@ -1,0 +1,40 @@
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+input {
+  display: block;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  text-align: center;
+}
+
+#balance {
+   text-align: center;
+   font-size: 1.5em;
+}
+
+#form {
+  margin: 2em;
+  text-align: center;
+}
+
+#deposits {
+  /* border: 1px solid green; */
+}
+
+#withdrawals {
+  /* border: 1px solid blue; */
+}
