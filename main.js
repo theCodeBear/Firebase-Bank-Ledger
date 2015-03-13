@@ -45,6 +45,11 @@ $(function() {
 
   $('#deposit').on('click', function() {
     amount = $('#input').val();
+    if (amount === '' || parseInt(amount) === 0) {
+      $('#input').val('');
+      $('#input').focus();
+      return;
+    }
     date = new Date().toDateString();
     var newB = parseInt(balance) + parseInt(amount);
     depositURL.push({amount: amount, date: date});
@@ -52,10 +57,16 @@ $(function() {
       amount: newB
     });
     $('#input').val('');
+    $('#input').focus();
   });
 
   $('#withdrawal').on('click', function() {
     amount = $('#input').val();
+    if (amount === '' || parseInt(amount) === 0) {
+      $('#input').val('');
+      $('#input').focus();
+      return;
+    }
     date = new Date().toDateString();
     var newB = parseInt(balance) - parseInt(amount);
     if (newB < 0) {
@@ -67,6 +78,7 @@ $(function() {
       amount: newB
     });
     $('#input').val('');
+    $('#input').focus();
   });
 
 });
